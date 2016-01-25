@@ -4,6 +4,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <libc.h>
+# include <unistd.h>
 
 typedef struct	s_memory
 {
@@ -24,5 +25,7 @@ typedef struct	s_info
 	char		*os_version;
 	char		**ports;
 }				t_info;
+
+void	get_hostname(t_info *info);
 
 #endif
